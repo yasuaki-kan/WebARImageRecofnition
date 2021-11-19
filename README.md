@@ -1,1 +1,1 @@
-# WebARImageRecofnition
+# WebARImageRecognition
