@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>gltf in A-Frame</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <!-- asset for model file -->
+            <a-asset-item id="glb_test" src="./../assets/model/3D/glTF/grass/grass.glb"></a-asset-item>
+        </a-assets>
+
+        <!-- Using the asset management system. -->
+        <a-gltf-model src="#glb_test" position="0 0.5 -2" rotation="0 -45 0" scale="0.2 0.2 0.2"></a-gltf-model>
+
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+</body>
+
+</html>
