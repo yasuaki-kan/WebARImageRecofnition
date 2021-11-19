@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>gltf in A-Frame</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <!-- asset for model file -->
+            <a-asset-item id="FoamRoller_obj" src="./../assets/model/3D/OBJ/FoamRoller/FoamRoller.obj"></a-asset-item>
+            <a-asset-item id="FoamRoller_mtl" src="./../assets/model/3D/OBJ/FoamRoller/FoamRoller.mtl"></a-asset-item>
+        </a-assets>
+
+        <!-- Using the asset management system. -->
+        <a-gltf-model src="#glb_test" position="0 0.5 -2" rotation="0 -45 0" scale="0.2 0.2 0.2"></a-gltf-model>
+        <a-entity obj-model="obj: #FoamRoller_obj; mtl: #FoamRoller_mtl" position="0 1.7 -0.3" scale="0.5 0.5 0.5"></a-entity>
+
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+</body>
+
+</html>
